@@ -163,6 +163,64 @@
     font-weight: bold;
     letter-spacing: 2px;
 }
+        .seal {
+    position: absolute;
+    left: 55px;
+    bottom: 55px;
+    width: 125px;
+    height: 125px;
+    border: 3px solid #d6a928;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-12deg);
+    background: rgba(214, 169, 40, 0.04);
+    box-shadow:
+        0 0 18px rgba(214,169,40,.12),
+        inset 0 0 15px rgba(214,169,40,.08);
+}
+
+.seal::before {
+    content: "";
+    position: absolute;
+    inset: 7px;
+    border: 1px dashed #d6a928;
+    border-radius: 50%;
+}
+
+.seal-inner {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.seal-star {
+    color: #d6a928;
+    font-size: 16px;
+}
+
+.seal-title {
+    color: #d6a928;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.seal-text {
+    color: #aaa;
+    font-size: 7px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    margin-top: 3px;
+}
+
+.seal-year {
+    color: #d6a928;
+    font-size: 10px;
+    margin-top: 3px;
+    font-weight: bold;
+}
 
         .footer {
             margin-top: 40px;
@@ -340,6 +398,14 @@
             </div>
 
         </div>
+        <div class="seal">
+    <div class="seal-inner">
+        <div class="seal-star">★</div>
+        <div class="seal-title">NYRON</div>
+        <div class="seal-text">OFFICIAL<br>CERTIFICATE</div>
+        <div class="seal-year">2026</div>
+    </div>
+</div>
 
         <div class="footer">
 

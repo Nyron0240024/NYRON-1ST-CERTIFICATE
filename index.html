@@ -230,6 +230,7 @@
             }
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 </head>
 
 <body>
@@ -320,10 +321,22 @@
 
         <div class="footer">
 
-            <div class="signature">
-                Official Organizer<br>
-                <strong>NYRON GROUP × DELPAN FAMILY</strong>
-            </div>
+    <div class="signature">
+        Official Organizer<br>
+        <strong>NYRON GROUP × DELPAN FAMILY</strong>
+    </div>
+
+    <div class="qr-section">
+        <div id="qrcode"></div>
+        <div class="qr-label">VERIFY CERTIFICATE</div>
+    </div>
+
+    <div class="certificate-id">
+        CERTIFICATE ID
+        <strong>NYRON-2026-001</strong>
+    </div>
+
+</div>
 
             <div class="certificate-id">
                 CERTIFICATE ID
@@ -333,6 +346,15 @@
         </div>
 
     </div>
+    <script>
+    new QRCode(document.getElementById("qrcode"), {
+        text: "https://nyron0240024.github.io/NYRON-1ST-CERTIFICATE/verify.html",
+        width: 110,
+        height: 110,
+        colorDark: "#000000",
+        colorLight: "#ffffff"
+    });
+</script>
 
 </body>
 </html>
